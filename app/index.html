@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager - QA Practice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Task Manager</h1>
+
+    <section id="auth">
+      <div class="card">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <input id="regName" placeholder="Name" required>
+          <input id="regEmail" type="email" placeholder="Email" required>
+          <input id="regPassword" type="password" placeholder="Password" required minlength="6">
+          <button type="submit">Register</button>
+          <p id="registerMsg" class="msg"></p>
+        </form>
+      </div>
+
+      <div class="card">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input id="loginEmail" type="email" placeholder="Email" required>
+          <input id="loginPassword" type="password" placeholder="Password" required>
+          <button type="submit">Login</button>
+          <p id="loginMsg" class="msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="tasksSection" class="hidden">
+      <div class="topbar">
+        <h2>My Tasks</h2>
+        <button id="logoutBtn">Logout</button>
+      </div>
+
+      <form id="taskForm" class="card">
+        <input id="taskTitle" placeholder="Task title" required maxlength="120">
+        <button type="submit">Save Task</button>
+        <button type="button" id="cancelEdit" class="secondary hidden">Cancel</button>
+        <p id="taskMsg" class="msg"></p>
+      </form>
+
+      <div class="card">
+        <p id="emptyMsg">No tasks yet.</p>
+        <ul id="taskList"></ul>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

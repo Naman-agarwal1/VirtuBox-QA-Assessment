@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  margin: 0;
+}
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+input {
+  display: block;
+  width: 95%;
+  padding: 10px;
+  margin: 8px 0;
+}
+button {
+  padding: 9px 14px;
+  cursor: pointer;
+}
+.secondary {
+  margin-left: 5px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hidden {
+  display: none !important;
+}
+.msg {
+  min-height: 20px;
+}
+li {
+  margin: 10px 0;
+}
