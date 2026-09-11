@@ -32,6 +32,7 @@ No server is required.
 5. Refresh the page and verify persistence.
 
 Data is stored in browser localStorage for this demo.
+Note: The practical application is a lightweight browser-based demo created for QA assessment purposes. Task/user data is stored using browser localStorage to demonstrate the required registration, login and CRUD workflows.
 
 ## QA documents
 
